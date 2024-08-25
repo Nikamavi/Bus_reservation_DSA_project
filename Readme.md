@@ -2,7 +2,7 @@
 
 ## HERE ARE FEW SNAPSHOTS OF OUTPUTS
 
-![LOGIN](images/login.png)
+![LOGIN](images/login.png)  
 <br/>
 <br/>
 ![BUSLISTS](images/buslists.png)
