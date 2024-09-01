@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <conio.h> // used to use the function 'getch'
 #include <string.h>
 #include <time.h>
 typedef struct BinarySearchTree BST;
@@ -126,7 +126,7 @@ void DisplaySeat(int bus[33])
       if (bus[i] == 0)
         printf("EMPTY ");
       else
-        printf("BOOKED"); // reserv
+        printf("BOOKED"); // reserved
     }
     printf("         ");
     if (i % 4 == 0)
@@ -187,7 +187,7 @@ int cost(BST *r)
     break;
   }
 }
-void status()
+void status() // shows bus and seats status
 {
   int busNum;
   busLists();
@@ -246,7 +246,7 @@ aa:
       printf("   ENTER THE BUS NUMBER: ");
       scanf("%d", &choice);
 
-      printf("\n HOW MANY SEATS DO WANT TO CANCEL : ");
+      printf("\n HOW MANY SEATS DO YOU WANT TO CANCEL : ");
       scanf("%d", &seatCancel);
       for (int i = 0; i < seatCancel; i++)
       {
@@ -255,7 +255,7 @@ aa:
 
         busSeat[choice][seatNumber] = 0;
       }
-      printf("\n\nYOUR RESERVATION HAS BEEN CANCEL !!\n\n");
+      printf("\n\nYOUR RESERVATION HAS BEEN CANCELLED !!\n\n");
       printf("\n  PRESS 'ENTER' KEY TO CONTINUE \n");
       getch();
       DisplaySeat(busSeat[choice]);
@@ -263,7 +263,7 @@ aa:
 
     else if (c == 'n' || c == 'N')
     {
-      printf("\nYOUR RESERVATION CANCELATION HAS BEEN DENIED\n");
+      printf("\nYOUR RESERVATION CANCELLATION HAS BEEN DENIED\n");
     }
   }
   else
